@@ -36,6 +36,7 @@
             this.Aceptarbutton = new System.Windows.Forms.Button();
             this.Cancelarbutton = new System.Windows.Forms.Button();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,27 +74,45 @@
             // 
             // Aceptarbutton
             // 
+            this.Aceptarbutton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Aceptarbutton.Image = global::Vista.Properties.Resources.aceptar;
+            this.Aceptarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.Aceptarbutton.Location = new System.Drawing.Point(171, 146);
             this.Aceptarbutton.Name = "Aceptarbutton";
-            this.Aceptarbutton.Size = new System.Drawing.Size(82, 35);
+            this.Aceptarbutton.Size = new System.Drawing.Size(96, 35);
             this.Aceptarbutton.TabIndex = 4;
             this.Aceptarbutton.Text = "Aceptar";
+            this.Aceptarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Aceptarbutton.UseVisualStyleBackColor = true;
             this.Aceptarbutton.Click += new System.EventHandler(this.Aceptarbutton_Click);
             // 
             // Cancelarbutton
             // 
-            this.Cancelarbutton.Location = new System.Drawing.Point(281, 146);
+            this.Cancelarbutton.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Cancelarbutton.Image = global::Vista.Properties.Resources.cancelar;
+            this.Cancelarbutton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Cancelarbutton.Location = new System.Drawing.Point(283, 146);
             this.Cancelarbutton.Name = "Cancelarbutton";
-            this.Cancelarbutton.Size = new System.Drawing.Size(82, 35);
+            this.Cancelarbutton.Size = new System.Drawing.Size(100, 35);
             this.Cancelarbutton.TabIndex = 5;
             this.Cancelarbutton.Text = "Cancelar";
+            this.Cancelarbutton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Cancelarbutton.UseVisualStyleBackColor = true;
             this.Cancelarbutton.Click += new System.EventHandler(this.Cancelarbutton_Click);
             // 
             // errorProvider1
             // 
             this.errorProvider1.ContainerControl = this;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Showcard Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(269, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(175, 26);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Inicio de Secion";
             // 
             // Login
             // 
@@ -102,6 +121,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.Cancelarbutton;
             this.ClientSize = new System.Drawing.Size(641, 264);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.Cancelarbutton);
             this.Controls.Add(this.Aceptarbutton);
             this.Controls.Add(this.ClaveTextBox);
@@ -125,5 +145,6 @@
         private Button Aceptarbutton;
         private Button Cancelarbutton;
         private ErrorProvider errorProvider1;
+        private Label label3;
     }
 }
