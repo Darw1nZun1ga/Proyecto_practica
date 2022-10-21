@@ -36,7 +36,7 @@ namespace Vista
             }
             errorProvider1.Clear();
 
-            UsuarioDatos userDatos = new UsuarioDatos();
+            UsuarioDatos userDatos = new UsuarioDatos();//Lamar de la clase datos un usuario
 
             bool valido = await userDatos.LoginAsync(UsuarioTextBox.Text, ClaveTextBox.Text);
 
@@ -50,6 +50,11 @@ namespace Vista
             {
                 MessageBox.Show("Datos de usuario incorrectos", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void Cancelarbutton_Click(object sender, EventArgs e)
+        {
+            Close();
         }
     }
 }

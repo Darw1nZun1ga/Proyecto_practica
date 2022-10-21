@@ -89,6 +89,7 @@
             this.Cancelarbutton.TabIndex = 5;
             this.Cancelarbutton.Text = "Cancelar";
             this.Cancelarbutton.UseVisualStyleBackColor = true;
+            this.Cancelarbutton.Click += new System.EventHandler(this.Cancelarbutton_Click);
             // 
             // errorProvider1
             // 
@@ -96,8 +97,10 @@
             // 
             // Login
             // 
+            this.AcceptButton = this.Aceptarbutton;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.Cancelarbutton;
             this.ClientSize = new System.Drawing.Size(641, 264);
             this.Controls.Add(this.Cancelarbutton);
             this.Controls.Add(this.Aceptarbutton);
