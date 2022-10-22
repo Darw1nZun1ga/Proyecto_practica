@@ -16,5 +16,11 @@ namespace Vista
         {
             InitializeComponent();
         }
+
+        private void listaDeUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UsuariosForm usuariosForm = new UsuariosForm();//Instancia de objeto usuariosForm del formulario UsuariosForm
+            usuariosForm.Show();//Para mostar la lista del objeto usuariosForm
+        }
     }
 }

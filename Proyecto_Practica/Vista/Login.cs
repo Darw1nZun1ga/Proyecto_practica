@@ -42,9 +42,9 @@ namespace Vista
 
             if (valido)
             {
-               // Menu formulario = new Menu();
-                //Hide();
-                //formulario.Show();
+               Menu formulario = new Menu();
+               Hide();
+               formulario.Show();
             }
             else
             {
